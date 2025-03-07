@@ -1,0 +1,35 @@
+<form action="/result_hmstr.php" method="post">
+<head>
+	<meta charset="UTF-8">
+	<title> Hamster Kombat</title>
+</head>
+
+<label for = "tier"> Уровень здания </label> <br>
+<select name="tier">
+        <option value="one">1</option>
+        <option value="two">2</option>
+		<option value="three">3</option>
+		<option value="four">4</option>
+    </select>
+<!-- <label for = "tier"> Уровень здания (тир 1, тир 2, тир 3, тир 4) </label> <br>
+<input type ="number" id ="tier" name = "tier" min = "1" max = "4" size = "3" /> -->
+
+<p></p>
+<label for = "rooms_search"> Количество комнат для обыска(пробраться,ремонт) </label> <br>
+<input type ="text" id ="rooms_search" name = "rooms_search" min = "0" max = "15" step = "1" size = "3" />
+
+<p></p>
+<label for = "rooms_up"> Количество комнат для прокачки </label> <br>
+<input type ="text" id ="rooms_up" name = "rooms_up" min = "0" max = "30" step = "1" size = "3" />
+
+<p></p>
+<strong>Это здание инвестиций?</strong><br>
+<input type ="radio" id ="Yes" name = "invest" value = "1" /> 
+<label for = "Yes"> Да </label> <br>
+<input type ="radio" id ="No" name = "invest" value = "2" />
+<label for = "No"> Нет </label> 
+<p></p>
+
+<input type="submit" value="Посчитать" /></td>
+</form>
+
